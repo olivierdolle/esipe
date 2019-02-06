@@ -10,7 +10,7 @@ jupyter = "*"
 pandas = "==0.20.*"
 scikit-learn = "==0.20.*"
 scipy = "==1.2.*"
+matplotlib = "*"
 
 [requires]
 python_version = "3.6"
-
