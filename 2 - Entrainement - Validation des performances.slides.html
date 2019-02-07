@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>Entrainement - Validation des performances slides</title>
+<title>2 - Entrainement - Validation des performances slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13245,7 +13245,7 @@ a.anchor-link {
 <h1 id="Import-des-donn&#233;es">Import des donn&#233;es<a class="anchor-link" href="#Import-des-donn&#233;es">&#182;</a></h1>
 </div>
 </div>
-</div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
@@ -13259,13 +13259,15 @@ a.anchor-link {
 </div>
 </div>
 
-</div></section><section>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Regardons la répartition de notre objectif</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="kc">None</span>
 </pre></div>
 
     </div>
@@ -13275,22 +13277,6 @@ a.anchor-link {
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[43]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(array([5008.,    0.,    0.,    0.,    0.,    0.,    0.,    0.,    0.,
-        4992.]),
- array([0. , 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1. ]),
- &lt;a list of 10 Patch objects&gt;)</pre>
-</div>
-
-</div>
 
 <div class="output_area">
 
@@ -13310,14 +13296,14 @@ a.anchor-link {
 </div>
 </div>
 
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Division-en-Train-set-/-Test-set">Division en Train set / Test set<a class="anchor-link" href="#Division-en-Train-set-/-Test-set">&#182;</a></h1>
 </div>
 </div>
-</div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
@@ -13331,7 +13317,7 @@ a.anchor-link {
 </div>
 </div>
 
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13345,10 +13331,10 @@ a.anchor-link {
 <h2 id="Premier-essai-na&#239;f">Premier essai na&#239;f<a class="anchor-link" href="#Premier-essai-na&#239;f">&#182;</a></h2>
 </div>
 </div>
-</div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># On essaie avec un arbre</span>
@@ -13374,8 +13360,8 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Training score 95.7%
-Test score     87.5%
+<pre>Training score 93.9%
+Test score     84.1%
 </pre>
 </div>
 </div>
@@ -13383,10 +13369,10 @@ Test score     87.5%
 </div>
 </div>
 
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># On définit une fonction que l&#39;on va réutiliser pour scorer différents modèles</span>
@@ -13406,10 +13392,10 @@ Test score     87.5%
 </div>
 </div>
 
-</div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
@@ -13433,9 +13419,9 @@ Test score     87.5%
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Moyenne : 88.2%, Ecart-Type : 1.3%
-CPU times: user 59.7 ms, sys: 2.44 ms, total: 62.2 ms
-Wall time: 61.2 ms
+<pre>Moyenne : 85.5%, Ecart-Type : 1.2%
+CPU times: user 61.4 ms, sys: 3.92 ms, total: 65.4 ms
+Wall time: 53.6 ms
 </pre>
 </div>
 </div>
@@ -13443,15 +13429,14 @@ Wall time: 61.2 ms
 </div>
 </div>
 
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#192;-quoi-&#231;a-sert-si-on-peut-juste-utiliser-le-test-set-?">&#192; quoi &#231;a sert si on peut juste utiliser le test set ?<a class="anchor-link" href="#&#192;-quoi-&#231;a-sert-si-on-peut-juste-utiliser-le-test-set-?">&#182;</a></h3><p>Et bien ça sert à <strong>VALIDER</strong>, le test set étant idéalement utilisé <strong>UNE SEULE FOIS</strong> une fois que vous aurez choisi le modèle à garder (le modèle <em>validé</em>).</p>
 <p>Si on teste tous nos essais sur le test set, on a juste choisi le modèle qui fait le meilleur score sur le test set pas le modèle qui fait le meilleur score en général.</p>
-<p>Cela peut mener aveuglément à des modèles qui sont <strong>Excellents</strong> sur le papier et <strong>pourri</strong> en production...</p>
-<p><strong>GAME OVER</strong></p>
-<p>Donc on utilise la validation croisée sur le training set.</p>
+<p>Cela peut mener aveuglément à des modèles qui sont <strong>Excellents</strong> sur le papier et <strong>Mauvais</strong> en production...</p>
+<p>On utilise donc la validation croisée sur le training set.</p>
 
 </div>
 </div>
@@ -13465,7 +13450,7 @@ Wall time: 61.2 ms
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
@@ -13489,9 +13474,9 @@ Wall time: 61.2 ms
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Moyenne : 87.413%, Ecart-Type : 0.5757%
-CPU times: user 91.2 ms, sys: 2.63 ms, total: 93.8 ms
-Wall time: 93 ms
+<pre>Moyenne : 85.7%, Ecart-Type : 0.4%
+CPU times: user 86.8 ms, sys: 2.31 ms, total: 89.1 ms
+Wall time: 88.6 ms
 </pre>
 </div>
 </div>
@@ -13502,7 +13487,7 @@ Wall time: 93 ms
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
@@ -13526,9 +13511,9 @@ Wall time: 93 ms
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Moyenne : 92.560%, Ecart-Type : 0.3651%
-CPU times: user 394 ms, sys: 3.79 ms, total: 398 ms
-Wall time: 400 ms
+<pre>Moyenne : 90.5%, Ecart-Type : 0.9%
+CPU times: user 374 ms, sys: 2.5 ms, total: 376 ms
+Wall time: 375 ms
 </pre>
 </div>
 </div>
@@ -13539,7 +13524,7 @@ Wall time: 400 ms
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
@@ -13563,9 +13548,9 @@ Wall time: 400 ms
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Moyenne : 93.347%, Ecart-Type : 0.2189%
-CPU times: user 3.76 s, sys: 483 ms, total: 4.24 s
-Wall time: 19.1 s
+<pre>Moyenne : 91.1%, Ecart-Type : 0.5%
+CPU times: user 3.73 s, sys: 503 ms, total: 4.23 s
+Wall time: 18.8 s
 </pre>
 </div>
 </div>
@@ -13577,36 +13562,30 @@ Wall time: 19.1 s
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tester-plein-de-combinaisons-de-mani&#232;re-plus-ordonn&#233;e">Tester plein de combinaisons de mani&#232;re plus ordonn&#233;e<a class="anchor-link" href="#Tester-plein-de-combinaisons-de-mani&#232;re-plus-ordonn&#233;e">&#182;</a></h2>
+<h2 id="Tester-des-combinaisons-de-mani&#232;re-automatis&#233;e">Tester des combinaisons de mani&#232;re automatis&#233;e<a class="anchor-link" href="#Tester-des-combinaisons-de-mani&#232;re-automatis&#233;e">&#182;</a></h2>
 </div>
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO</span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
 
-    </div>
-</div>
-</div>
+<span class="n">model</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
+<span class="n">parameter_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">],</span>
+    <span class="s1">&#39;max_depth&#39;</span>   <span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+<span class="p">}</span>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Evaluation-Finale">Evaluation Finale<a class="anchor-link" href="#Evaluation-Finale">&#182;</a></h1>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">parameter_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="n">params</span> <span class="o">=</span> <span class="n">search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Meilleurs paramètres: </span><span class="si">{search.best_params_}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Meilleur score      : </span><span class="si">{search.best_score_}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13622,61 +13601,80 @@ Wall time: 19.1 s
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NotFittedError</span>                            Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-34-04add77661d3&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>accuracy_score<span class="ansi-blue-fg">(</span>model<span class="ansi-blue-fg">.</span>predict<span class="ansi-blue-fg">(</span>X_test<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> y_test<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/.local/share/virtualenvs/esipe-vEf5WteC/lib/python3.6/site-packages/sklearn/ensemble/forest.py</span> in <span class="ansi-cyan-fg">predict</span><span class="ansi-blue-fg">(self, X)</span>
-<span class="ansi-green-intense-fg ansi-bold">    541</span>             The predicted classes<span class="ansi-blue-fg">.</span>
-<span class="ansi-green-intense-fg ansi-bold">    542</span>         &#34;&#34;&#34;
-<span class="ansi-green-fg">--&gt; 543</span><span class="ansi-red-fg">         </span>proba <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>predict_proba<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    544</span> 
-<span class="ansi-green-intense-fg ansi-bold">    545</span>         <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>n_outputs_ <span class="ansi-blue-fg">==</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">~/.local/share/virtualenvs/esipe-vEf5WteC/lib/python3.6/site-packages/sklearn/ensemble/forest.py</span> in <span class="ansi-cyan-fg">predict_proba</span><span class="ansi-blue-fg">(self, X)</span>
-<span class="ansi-green-intense-fg ansi-bold">    579</span>             classes corresponds to that <span class="ansi-green-fg">in</span> the attribute<span class="ansi-red-fg"> </span><span class="ansi-red-fg">`</span>classes_<span class="ansi-red-fg">`</span><span class="ansi-blue-fg">.</span>
-<span class="ansi-green-intense-fg ansi-bold">    580</span>         &#34;&#34;&#34;
-<span class="ansi-green-fg">--&gt; 581</span><span class="ansi-red-fg">         </span>check_is_fitted<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;estimators_&#39;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    582</span>         <span class="ansi-red-fg"># Check data</span>
-<span class="ansi-green-intense-fg ansi-bold">    583</span>         X <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_validate_X_predict<span class="ansi-blue-fg">(</span>X<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">~/.local/share/virtualenvs/esipe-vEf5WteC/lib/python3.6/site-packages/sklearn/utils/validation.py</span> in <span class="ansi-cyan-fg">check_is_fitted</span><span class="ansi-blue-fg">(estimator, attributes, msg, all_or_any)</span>
-<span class="ansi-green-intense-fg ansi-bold">    949</span> 
-<span class="ansi-green-intense-fg ansi-bold">    950</span>     <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> all_or_any<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span>hasattr<span class="ansi-blue-fg">(</span>estimator<span class="ansi-blue-fg">,</span> attr<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">for</span> attr <span class="ansi-green-fg">in</span> attributes<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 951</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">raise</span> NotFittedError<span class="ansi-blue-fg">(</span>msg <span class="ansi-blue-fg">%</span> <span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">&#39;name&#39;</span><span class="ansi-blue-fg">:</span> type<span class="ansi-blue-fg">(</span>estimator<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>__name__<span class="ansi-blue-fg">}</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    952</span> 
-<span class="ansi-green-intense-fg ansi-bold">    953</span> 
-
-<span class="ansi-red-fg">NotFittedError</span>: This RandomForestClassifier instance is not fitted yet. Call &#39;fit&#39; with appropriate arguments before using this method.</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Meilleurs paramètres: {&#39;max_depth&#39;: 10, &#39;n_estimators&#39;: 100}
+Meilleur score      : 0.9090666666666667
+CPU times: user 1min 8s, sys: 204 ms, total: 1min 8s
+Wall time: 1min 9s
+</pre>
 </div>
 </div>
 
 </div>
 </div>
 
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Evaluation-Finale">Evaluation Finale<a class="anchor-link" href="#Evaluation-Finale">&#182;</a></h1>
 </div>
+</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># On a trouvé les meilleurs paramètres (parmi ceux cherchés...)</span>
+<span class="c1"># On va les utiliser pour entrainer le modèle sur tout le dataset</span>
+<span class="c1"># Puis on évalue le modèle obtenu sur le test set</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="o">**</span><span class="n">params</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Score du modèle (précision) : {accuracy_score(model.predict(X_test), y_test) * 100:.1f}%&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Score du modèle (précision) : 90.1%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Sauvegarde-du-mod&#232;le">Sauvegarde du mod&#232;le<a class="anchor-link" href="#Sauvegarde-du-mod&#232;le">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># On sérialize le modèle sur disque</span>
+<span class="c1"># On pourra ainsi le mettre à disposition dans une API, directement dans un moteur de prédiction, etc</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;model.pkl&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_model</span><span class="p">:</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">file_model</span><span class="p">)</span>
 </pre></div>
 
     </div>
