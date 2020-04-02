@@ -4,13 +4,13 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-jupyter = "*"
 
 [packages]
-pandas = "==0.20.*"
-scikit-learn = "==0.20.*"
-scipy = "==1.2.*"
+pandas = "*"
+scikit-learn = "*"
+scipy = "*"
 matplotlib = "*"
+jupyter = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.8"
